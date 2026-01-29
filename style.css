@@ -1,0 +1,32 @@
+
+body,html {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(fondo.webp) center center;
+    background-size: cover;
+}
+.Miweb¨{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
+    max-width: 400px;
+    border: 1px solid #ddd;
+}
+ .Boton-redireccion{
+background-color: blueviolet;
+color: white;
+padding: 10px 20px;
+margin-top: 20px;
+border-radius: 5px;
+text-decoration: none;
+display: inline-block;
+ }
+ .Boton-redireccion:hover{
+    background-color: blueviolet;
+ }
