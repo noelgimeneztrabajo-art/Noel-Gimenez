@@ -1,32 +1,156 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
 
-body,html {
-    font-family: Arial, sans-serif;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(fondo.webp) center center;
-    background-size: cover;
+/* FONDO */
+body{
+    min-height:100vh;
+    background: linear-gradient(120deg, #1e5f3b, #4caf50);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
-.Miweb¨{
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,1);
-    max-width: 400px;
-    border: 1px solid #ddd;
+
+/* CONTENEDOR PRINCIPAL */
+.cv-container{
+    background:#f5f9f6;
+    max-width:900px;
+    width:100%;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
 }
- .Boton-redireccion{
-background-color: blueviolet;
-color: white;
-padding: 10px 20px;
-margin-top: 20px;
-border-radius: 5px;
-text-decoration: none;
-display: inline-block;
- }
- .Boton-redireccion:hover{
-    background-color: blueviolet;
- }
+
+/* HEADER */
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:42px;
+    color:#1e5f3b;
+}
+
+.profesion{
+    font-size:20px;
+    font-weight:600;
+    color:#4caf50;
+    margin-top:5px;
+}
+
+.descripcion{
+    margin-top:15px;
+    color:#444;
+    font-size:16px;
+}
+
+/* TARJETAS */
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    color:#1e5f3b;
+    margin-bottom:15px;
+    border-bottom:2px solid #4caf50;
+    padding-bottom:5px;
+}
+
+/* LISTAS */
+.card ul{
+    list-style:none;
+}
+
+.card ul li{
+    margin-bottom:8px;
+    color:#333;
+}
+
+/* ITEMS */
+.item{
+    margin-bottom:15px;
+}
+
+.item h3{
+    color:#2e7d32;
+    font-size:18px;
+}
+
+.item span{
+    font-size:14px;
+    color:#777;
+}
+
+.item p{
+    margin-top:5px;
+    font-size:15px;
+    color:#444;
+}
+
+/* HABILIDADES */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skills span{
+    background:#4caf50;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+    box-shadow:0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* CONTACTO */
+.contacto{
+    text-align:center;
+    margin-top:30px;
+}
+
+.contacto h2{
+    color:#1e5f3b;
+}
+
+.contacto p{
+    margin:10px 0;
+    color:#444;
+}
+
+/* BOTON */
+.btn{
+    display:inline-block;
+    background:#1e5f3b;
+    color:white;
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#4caf50;
+    transform:scale(1.05);
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .header h1{
+        font-size:32px;
+    }
+    .cv-container{
+        padding:20px;
+    }
+}
